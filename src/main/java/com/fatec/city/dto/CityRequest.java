@@ -1,5 +1,21 @@
 package com.fatec.city.dto;
 
-public record CityRequest (String name, String estado, String popul, String pib) {
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
+public record CityRequest (
+    @NotNull (message = "Campo requerido!!")
+    String name,
+
+    @NotBlank (message = "Campo requerido!!")
+    String estado,
+
+    @NotBlank (message = "Campo requerido!!")
+    String popul,
+
+    @NotBlank (message = "Campo requerido!!")
+    String pib
+) {
     
+
 }

@@ -22,6 +22,5 @@ public class CityController {
     @GetMapping
     public ResponseEntity<List<CityResponse>> getCities(){
         return ResponseEntity.ok(cityService.getCities());
-        
     }
 }

@@ -12,13 +12,16 @@ import jakarta.persistence.Table;
 public class City {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column
+
+    @Column(length = 40)
     private String name;
 
     private String estado;
+    
     private String popul;
+
     private String pib;
 
     public Integer getId() {

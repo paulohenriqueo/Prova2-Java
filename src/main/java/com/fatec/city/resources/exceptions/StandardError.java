@@ -8,7 +8,8 @@ public class StandardError {
     private Integer status;
     private String error;
     private String message;
-    
+    private String path;
+
     public Instant getTimeStamp() {
         return timeStamp;
     }
@@ -33,6 +34,13 @@ public class StandardError {
     public void setMessage(String message) {
         this.message = message;
     }
+    public String getPath() {
+        return path;
+    }
+    public void setPath(String path) {
+        this.path = path;
+    }
+    
 
 
 }
